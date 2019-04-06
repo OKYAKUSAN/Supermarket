@@ -42,7 +42,12 @@ namespace Supermarket.DAL
             return PackageHelper.SortPackage(ds.Tables[0].Rows[0]);
         }
 
-        public void InsertSort(string sortName)
+        /// <summary>
+        /// 向数据库新增分类
+        /// </summary>
+        /// <param name="sortName">分类名称</param>
+        /// <returns></returns>
+        public int InsertSort(string sortName)
         {
             DateTime currentTime = DateTime.Now;
             strCmd = "";
@@ -50,11 +55,32 @@ namespace Supermarket.DAL
             strCmd += " insert into Sort values ('" + sortName + "')";
             strCmd += ";select @@IDENTITY as Id";
             int insertId = ServerHelper.ExecuteScalar(strCmd);
+            int sortModificationId = 0;
             if (insertId != -1)
             {
                 strCmd = "";
                 strCmd += "insert into Sort_Modification values (" + insertId.ToString() + ",'" + sortName + "','" + currentTime.ToString("yyyy-MM-dd HH:mm:ss") + "')";
+                strCmd += ";select @@IDENTITY as Id";
+                sortModificationId = ServerHelper.ExecuteScalar(strCmd);
             }
+            return insertId;
+        }
+
+        public int UpdateSort(Sort sortObj)
+        {
+            DateTime currentTime = DateTime.Now;
+            strCmd = "";
+            strCmd += "update Sort set Sort_Name='" + sortObj.SortName + "' where Sort_Id=" + sortObj.SortId.ToString();
+            int rows = ServerHelper.ExecuteNonQuery(strCmd);
+            int sortModificationId = 0;
+            if (rows != 0)
+            {
+                strCmd = "";
+                strCmd += "insert into Sort_Modification values (" + sortObj.SortId.ToString() + ",'" + sortObj.SortName + "','" + currentTime.ToString("yyyy-MM-dd HH:mm:ss") + "')";
+                strCmd += ";select @@IDENTITY as Id";
+                sortModificationId = ServerHelper.ExecuteScalar(strCmd);
+            }
+            return rows;
         }
     }
 }

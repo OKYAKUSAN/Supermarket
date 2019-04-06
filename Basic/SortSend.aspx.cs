@@ -18,8 +18,19 @@ namespace Supermarket.Basic
             Sort sortEdit = new Sort();
             sortEdit.SortId = sortId;
             sortEdit.SortName = sortName;
+            GoodsBll gb = new GoodsBll();
+            bool success = false;
             if (sortId == 0)
             {
+                success = gb.InsertSort(sortEdit.SortName);
+                if (success) Msg.Text = "添加成功！";
+                else Msg.Text = "添加失败！“" + sortEdit.SortName + "”已存在。";
+            }
+            else
+            {
+                success = gb.UpdateSort(sortEdit);
+                if (success) Msg.Text = "修改成功！";
+                else Msg.Text = "修改失败！";
             }
         }
     }

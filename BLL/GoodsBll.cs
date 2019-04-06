@@ -29,5 +29,29 @@ namespace Supermarket.BLL
         {
             return goodsDal.GetSingleSort(id);
         }
+
+        /// <summary>
+        /// 添加分类
+        /// </summary>
+        /// <param name="sortName">分类名称</param>
+        /// <returns></returns>
+        public bool InsertSort(string sortName)
+        {
+            int id = goodsDal.InsertSort(sortName);
+            if (id == -1) return false;
+            else return true;
+        }
+
+        /// <summary>
+        /// 更新分类
+        /// </summary>
+        /// <param name="sortObj">需要更新的Sort实例</param>
+        /// <returns></returns>
+        public bool UpdateSort(Sort sortObj)
+        {
+            int rows = goodsDal.UpdateSort(sortObj);
+            if (rows == 0) return false;
+            else return true;
+        }
     }
 }

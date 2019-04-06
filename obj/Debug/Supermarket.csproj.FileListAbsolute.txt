@@ -1,0 +1,5 @@
+F:\素材\自制\c_project\02_Shop\Supermarket\Supermarket\bin\Supermarket.dll
+F:\素材\自制\c_project\02_Shop\Supermarket\Supermarket\bin\Supermarket.pdb
+F:\素材\自制\c_project\02_Shop\Supermarket\Supermarket\obj\Debug\Supermarket.dll
+F:\素材\自制\c_project\02_Shop\Supermarket\Supermarket\obj\Debug\Supermarket.pdb
+F:\素材\自制\c_project\02_Shop\Supermarket\Supermarket\obj\Debug\Supermarket.csprojResolveAssemblyReference.cache

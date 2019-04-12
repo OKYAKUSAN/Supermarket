@@ -16,7 +16,7 @@
                 <div class="leftNav-item">基础数据<span></span></div>
                 <div class="leftNav-subNav">
                     <a href="/Basic/sortlist.aspx" target="rightFrame">分类管理</a>
-                    <a href="rightFrame" target="rightFrame">商品管理</a>
+                    <a href="/Basic/GoodsList.aspx" target="rightFrame">商品管理</a>
                 </div>
             </li>
             <li>

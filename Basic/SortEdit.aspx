@@ -9,7 +9,7 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" action="" method="post" target="rightFrame">
+    <form id="form1" action="/Basic/SortSend.aspx" method="post" target="rightFrame">
     <div class="p30">
         <div class="breadCrumb">
             <a href="/home.aspx" target="rightFrame">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="/Basic/sortlist.aspx" target="rightFrame">分类管理</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<span>分类编辑</span>
@@ -46,6 +46,7 @@
     <script type="text/javascript">
         $(function () {
             var sortName = $("#formSortName");
+            sortName.val(<%=sortName %>);
             $("#formSubmit").click(function () {
                 var submit = true;
                 if (sortName.val() == "") {

@@ -55,6 +55,11 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Basic\GoodsDelete.aspx" />
+    <Content Include="Basic\GoodsEdit.aspx" />
+    <Content Include="Basic\GoodsList.aspx" />
+    <Content Include="Basic\GoodsSend.aspx" />
+    <Content Include="Basic\SortDelete.aspx" />
     <Content Include="Basic\SortEdit.aspx" />
     <Content Include="Basic\sortlist.aspx" />
     <Content Include="Basic\SortSend.aspx" />
@@ -117,6 +122,41 @@
     </Compile>
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\GoodsDelete.aspx.cs">
+      <DependentUpon>GoodsDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basic\GoodsDelete.aspx.designer.cs">
+      <DependentUpon>GoodsDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\GoodsEdit.aspx.cs">
+      <DependentUpon>GoodsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basic\GoodsEdit.aspx.designer.cs">
+      <DependentUpon>GoodsEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\GoodsList.aspx.cs">
+      <DependentUpon>GoodsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basic\GoodsList.aspx.designer.cs">
+      <DependentUpon>GoodsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\GoodsSend.aspx.cs">
+      <DependentUpon>GoodsSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basic\GoodsSend.aspx.designer.cs">
+      <DependentUpon>GoodsSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\SortDelete.aspx.cs">
+      <DependentUpon>SortDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basic\SortDelete.aspx.designer.cs">
+      <DependentUpon>SortDelete.aspx</DependentUpon>
     </Compile>
     <Compile Include="Basic\SortEdit.aspx.cs">
       <DependentUpon>SortEdit.aspx</DependentUpon>

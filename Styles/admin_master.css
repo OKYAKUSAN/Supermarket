@@ -88,6 +88,10 @@ table { width:100%; border-collapse:collapse; border-spacing:0;}
 .formItem-statsText input { margin-left:5px; border:solid 1px #cccccc; padding:0 5px; width:30px; height:23px; line-height:23px; text-align:center; outline:none;}
 .formItem-checkbox { float:left;}
 .formItem-checkbox input { height:25px; outline:none;}
+.formItem-radio { float:left;}
+.formItem-radio div { float:left; margin-right:20px;}
+.formItem-radio input { float:left; height:25px; cursor:pointer;}
+.formItem-radio label { float:left; margin-left:5px; cursor:pointer;}
 .gameStatsData { width:600px; height:auto;}
 /*#gameSubmit { margin-right:10px; border:solid 1px #7fcaff; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; width:60px; height:25px; background-color:#ddebff; color:#0077cb; cursor:pointer;}*/
 .formTableBtn input { margin-right:10px; border:solid 1px #7fcaff; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; width:60px; height:25px; background-color:#ddebff; color:#0077cb; cursor:pointer; outline:none;}

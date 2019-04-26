@@ -13,18 +13,17 @@
     <div class="leftNav">
         <ul>
             <li>
+                <div class="leftNav-item">交易数据<span></span></div>
+                <div class="leftNav-subNav">
+                    <a href="/Transaction/SaleList.aspx" target="rightFrame">销售管理</a>
+                    <a href="rightFrame" target="rightFrame">进货管理</a>
+                </div>
+            </li>
+            <li>
                 <div class="leftNav-item">基础数据<span></span></div>
                 <div class="leftNav-subNav">
                     <a href="/Basic/sortlist.aspx" target="rightFrame">分类管理</a>
                     <a href="/Basic/GoodsList.aspx" target="rightFrame">商品管理</a>
-                </div>
-            </li>
-            <li>
-                <div class="leftNav-item">导航菜单<span></span></div>
-                <div class="leftNav-subNav">
-                    <a href="rightFrame" target="rightFrame">子导航菜单</a>
-                    <a href="rightFrame" target="rightFrame">子导航菜单</a>
-                    <a href="rightFrame" target="rightFrame">子导航菜单</a>
                 </div>
             </li>
             <li>

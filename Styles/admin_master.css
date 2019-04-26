@@ -77,6 +77,9 @@ table { width:100%; border-collapse:collapse; border-spacing:0;}
 .formItem-select { float:left; margin-right:10px;}
 .formItem-select select { float:left; width:80px; height:25px; outline:none;}
 .formItem-select span { float:left; margin-left:5px; line-height:25px;}
+.transactionGoods select { margin-right:10px;}
+.transactionSelct div { float:left; margin-right:10px; height:25px;}
+.transactionSelct select { width:70px;}
 .formMsg { display:none; float:left; line-height:25px; color:Red;}
 .formItem-text input { border:solid 1px #cccccc; width:220px; padding:0 5px; height:23px; line-height:23px; outline:none;}
 /*

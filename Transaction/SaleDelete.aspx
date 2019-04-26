@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GoodsDelete.aspx.cs" Inherits="Supermarket.Basic.GoodsDelete" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SaleDelete.aspx.cs" Inherits="Supermarket.Transaction.SaleDelete" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,7 +12,7 @@
     <div class="p30">
         <div class="sendMsg">
             <div class="sendMsg-text"><asp:Literal ID="Msg" runat="server"></asp:Literal></div>
-            <div class="sendMsg-notice">如果<span>5</span>秒之后没有自动跳转，请点击<a href="/Basic/GoodsList.aspx" target="rightFrame">这里</a>。</div>
+            <div class="sendMsg-notice">如果<span>5</span>秒之后没有自动跳转，请点击<a href="/Transaction/SaleList.aspx" target="rightFrame">这里</a>。</div>
         </div>
     </div>
     <script type="text/javascript">
@@ -28,7 +28,7 @@
             var changeSecond = function () {
                 timerSpan.html(second);
                 if (second == 0)
-                    window.location = "/Basic/GoodsList.aspx";
+                    window.location = "/Transaction/SaleList.aspx";
                 else second--;
             }
 

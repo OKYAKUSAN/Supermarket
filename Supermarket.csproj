@@ -79,6 +79,10 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Transaction\SaleDelete.aspx" />
+    <Content Include="Transaction\SaleEdit.aspx" />
+    <Content Include="Transaction\SaleList.aspx" />
+    <Content Include="Transaction\SaleSend.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -180,7 +184,9 @@
       <DependentUpon>SortSend.aspx</DependentUpon>
     </Compile>
     <Compile Include="BLL\GoodsBll.cs" />
+    <Compile Include="BLL\SaleBll.cs" />
     <Compile Include="DAL\GoodsDal.cs" />
+    <Compile Include="DAL\SaleDal.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -223,6 +229,7 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model\Goods.cs" />
+    <Compile Include="Model\Sale.cs" />
     <Compile Include="Model\Sort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -231,6 +238,34 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SaleDelete.aspx.cs">
+      <DependentUpon>SaleDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SaleDelete.aspx.designer.cs">
+      <DependentUpon>SaleDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SaleEdit.aspx.cs">
+      <DependentUpon>SaleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SaleEdit.aspx.designer.cs">
+      <DependentUpon>SaleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SaleList.aspx.cs">
+      <DependentUpon>SaleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SaleList.aspx.designer.cs">
+      <DependentUpon>SaleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SaleSend.aspx.cs">
+      <DependentUpon>SaleSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SaleSend.aspx.designer.cs">
+      <DependentUpon>SaleSend.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
